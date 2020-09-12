@@ -5,7 +5,7 @@ from sc2 import Race, Difficulty
 from sc2.player import Bot, Computer
 
 # Load bot
-from example_bot import MarineRush
+from marinerush_bot import MarineRush
 bot = Bot(Race.Terran, MarineRush())
 
 # Start game

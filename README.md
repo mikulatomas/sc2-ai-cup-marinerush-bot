@@ -1,1 +1,1 @@
-# sc2-ai-cup-example-bot
+# sc2-ai-cup-marinerush-bot
