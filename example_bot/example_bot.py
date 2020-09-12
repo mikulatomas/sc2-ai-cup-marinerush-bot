@@ -35,7 +35,7 @@ class MarineRush(BotAI):
 
             # Stavba Barracks
             # Bot staví tak dlouho, dokud si může dovolit stavět Barracks a jejich počet je menší než 6
-            if self.tech_requirement_progress(UnitTypeId.BARRACKS) == 1:
+            if self.structures(UnitTypeId.SUPPLYDEPOT).amount >= 1:
                 # Je jich méně než 6 nebo se již nějaké nestaví
                 if self.structures(UnitTypeId.BARRACKS).amount < 6:
                     if self.can_afford(UnitTypeId.BARRACKS) and not self.already_pending(UnitTypeId.BARRACKS):
